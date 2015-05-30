@@ -13,8 +13,19 @@ var ES = {
 
 	},
 
+	headerHeight: function(){
+
+		var windoweight = $(window).height();
+		$('#header').css('height',windoweight+'px');
+		$('#header').css('line-height',windoweight+'px');
+
+		console.log(windoweight);
+
+	},
+
 	init :function(){
 		this.navigationScroll()
+		this.headerHeight()
 	}
 
 }

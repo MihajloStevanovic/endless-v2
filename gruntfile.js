@@ -20,6 +20,9 @@ module.exports = function(grunt) {
       files: ['**/*.scss'],
       tasks: ['sass']
     },
+    scripts: {
+      files: ['**/*.js']
+    },
     html: {
       files: ['**/*.html']
     }
@@ -29,7 +32,8 @@ module.exports = function(grunt) {
       bsFiles: {
         src : [
           '**/*.css',
-          '**/*.html'
+          '**/*.html',
+          '**/*.js'
         ]
       },
       options: {
