@@ -23,9 +23,18 @@ var ES = {
 
 	},
 
+	displayMobileNav :function(){
+
+		$('.fa-bars').on('click', function(){
+			console.log('tst');
+			$('#nav ul ').toggleClass('open');
+		})
+	},
+
 	init :function(){
 		this.navigationScroll()
 		this.headerHeight()
+		this.displayMobileNav()
 	}
 
 }

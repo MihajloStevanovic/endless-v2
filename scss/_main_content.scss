@@ -1,5 +1,17 @@
 #main {
-	width: 1170px;
-	min-height: 600px;
-	margin: 0 auto;
+	
+}
+
+@media only screen and (min-width: 768px) {
+	#main {
+
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#main {
+		width: 1200px;
+		min-height: 600px;
+		margin: 0 auto;
+	}
 }
