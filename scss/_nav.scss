@@ -10,12 +10,12 @@
 	line-height: 50px;
 	background: #fff;
 	box-shadow: inset 0 -1px 0 0 #F1F1F1;
+	z-index: 2;
 	.fa-bars {
 		position: relative;
     	font-size: 2em;
 		margin: 0 20px;
 		vertical-align: middle;
-		z-index: 2;
 		-webkit-transition: all .2s ease-in-out;
 		-moz-transition: all .2s ease-in-out;
 		-ms-transition: all .2s ease-in-out;
@@ -25,9 +25,11 @@
 	ul {
 		position: relative;
 		width: 80%;
+		height: 200px;
 		margin-left: -80%;
 		background: #333;
-		padding: 50px 0;		
+		padding: 50px 0;
+		overflow-y: scroll;
 		-webkit-transition: all .3s ease-in-out;
 		-moz-transition: all .3s ease-in-out;
 		-ms-transition: all .3s ease-in-out;
@@ -84,6 +86,24 @@
 
 @media only screen and (min-width: 768px) {
 	#nav {
+		
+		ul {
+			li {
+				
+				
+    			
+			}
+		}
+		&.light {
+			height: 50px;
+			line-height: 50px;
+			
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#nav {
 		height: 80px;
 		line-height: 80px;
 		-webkit-transition: all .2s ease-in-out;
@@ -107,6 +127,11 @@
 			-ms-transition: none;
 			-o-transition: none;
 			transition: none;
+			display: block;
+			width: 1200px;
+			margin: 0 auto;
+			text-align: right;
+			padding: 0;
 			li {
 				display: inline-block;
 				line-height: inherit;
@@ -135,20 +160,6 @@
 			.fa-bars {
 				margin-left: -50%;
 			}
-		}
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	#nav {
-		ul {
-			display: block;
-			width: 1200px;
-			margin: 0 auto;
-			text-align: right;
-			padding: 0;
-		}
-		&.light {
 			ul {
 				padding: 0;
 			}

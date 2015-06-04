@@ -110,13 +110,13 @@ body {
   line-height: 50px;
   background: #fff;
   box-shadow: inset 0 -1px 0 0 #F1F1F1;
+  z-index: 2;
 }
 #nav .fa-bars {
   position: relative;
   font-size: 2em;
   margin: 0 20px;
   vertical-align: middle;
-  z-index: 2;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
@@ -126,9 +126,11 @@ body {
 #nav ul {
   position: relative;
   width: 80%;
+  height: 200px;
   margin-left: -80%;
   background: #333;
   padding: 50px 0;
+  overflow-y: scroll;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
@@ -174,6 +176,12 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  #nav.light {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
   #nav {
     height: 80px;
     line-height: 80px;
@@ -199,6 +207,11 @@ body {
     -ms-transition: none;
     -o-transition: none;
     transition: none;
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0;
   }
   #nav ul li {
     display: inline-block;
@@ -228,15 +241,6 @@ body {
   #nav.light .fa-bars {
     margin-left: -50%;
   }
-}
-@media only screen and (min-width: 1200px) {
-  #nav ul {
-    display: block;
-    width: 1200px;
-    margin: 0 auto;
-    text-align: right;
-    padding: 0;
-  }
   #nav.light ul {
     padding: 0;
   }
@@ -262,6 +266,55 @@ body {
     margin: 0 auto;
   }
 }
+/*
+ * News components styles
+ */
+.resume-news-list {
+  background-color: #F1F1F1;
+  padding: 20px 10px;
+}
+.resume-news-list .resume-news {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  box-shadow: 0 0 2px 2px #E2E2E2;
+}
+.resume-news-list .resume-news .resume-news-header {
+  position: relative;
+  padding: 20px 20px 10px 20px;
+  background-color: #8a3232;
+}
+.resume-news-list .resume-news .resume-news-header .heading-2 {
+  color: #fff;
+  font-weight: 100;
+}
+.resume-news-list .resume-news .resume-news-header .resume-news-info {
+  color: #ccc;
+  font-size: 13px;
+  margin: 10px 0;
+}
+.resume-news-list .resume-news .resume-news-content {
+  color: #666;
+  line-height: 1.7;
+  padding: 30px 20px 20px 20px;
+}
+.resume-news-list .resume-news .resume-more-detail {
+  position: absolute;
+  bottom: -25px;
+  right: 30px;
+}
+.resume-news-list .resume-news .resume-more-detail .fa-plus {
+  width: 35px;
+  height: 35px;
+  font-size: 2.5em;
+  color: #fff;
+  background: rgba(105, 35, 35, 0.9);
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 #footer {
   height: 300px;
   background: #333;
