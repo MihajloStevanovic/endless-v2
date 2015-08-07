@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Mihajlo Stevanovic -- Frontend developer -- http://www.mihajlostevanovic.com
 
 # THANKS
 
-    <name>
+    Mélanie Ginibre
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, Javascript
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, Sass

@@ -225,7 +225,7 @@ body {
   #nav ul li {
     display: inline-block;
     line-height: inherit;
-    box-shadow: inset 0 5px 0 0 #fff;
+    padding: 0;
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
@@ -233,9 +233,15 @@ body {
     transition: none;
   }
   #nav ul li:hover {
-    background: #8a3232;
-    box-shadow: inset 0 5px 0 0 #692323;
+    background: #fff;
+    box-shadow: inset 0 -5px 0 0 #692323;
     text-shadow: 2px 2px 0 #692323;
+  }
+  #nav ul li:hover a {
+    color: #8a3232;
+  }
+  #nav ul li:hover a:hover {
+    text-shadow: none;
   }
   #nav ul li a {
     color: #8a3232;
